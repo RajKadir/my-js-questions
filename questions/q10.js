@@ -32,3 +32,12 @@ var output = (function () {
 })();
 
 console.log(output);
+
+// This should just do nothing to the object since delete only works on object properties, not on an object itself
+var z = { foo: 1 };
+var output = (function () {
+  delete z; // does nothing, z is not a property it is an object
+  return z; // returns the object as is
+})();
+
+console.log(output);
