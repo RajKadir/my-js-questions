@@ -5,7 +5,7 @@
 */
 
 /*
-    Answer: reassign the value of arrayList to an empty array (ONLY do this if this is the original reference to the array itself, if its a not then you won't edit the original reference)
+    Answer 1: reassign the value of arrayList to an empty array (ONLY do this if this is the original reference to the array itself, if its a not then you won't edit the original reference)
 */
 console.log("Method 1: reassign the value of arrayList to empty array []: ");
 var arrayList = ["a", "b", "c", "d", "e", "f"];
@@ -26,7 +26,7 @@ console.log("Original:");
 console.log(OriginalArrayList); // Original reference was NOT changed.
 
 /*
-    Answer2: set the length of the array to 0
+    Answer 2: set the length of the array to 0
     This will clear the existing array by setting the length to 0. This way of emptying also updates all the reference variables that point to the original array
 */
 console.log("Method 2: Set the length of the array to 0: ");
@@ -41,3 +41,11 @@ var referenceArr = arrayOriginal;
 referenceArr.length = 0;
 console.log(arrayOriginal); // output: [] Original reference WAS changed
 console.log(referenceArr); // output: []
+
+/*
+    Answer 3: Use the splice method - This UPDATES all references to the original array
+*/
+console.log("Method 3: Use the splice method on the array");
+var arrayListSplice = ["a", "b", "c", "d", "e", "f"];
+arrayListSplice.splice(0, arrayListSplice.length);
+
