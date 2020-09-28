@@ -48,4 +48,14 @@ console.log(referenceArr); // output: []
 console.log("Method 3: Use the splice method on the array");
 var arrayListSplice = ["a", "b", "c", "d", "e", "f"];
 arrayListSplice.splice(0, arrayListSplice.length);
+console.log(arrayListSplice);
 
+/*
+    Answer 4: Loop through the array and pop the values out the array (NOT recommended way)
+*/
+console.log("Method 4: Loop and pop values out");
+var arrayListPop = ["a", "b", "c", "d", "e", "f"];
+while (arrayListPop.length) {
+  arrayListPop.pop();
+}
+console.log(arrayListPop);
