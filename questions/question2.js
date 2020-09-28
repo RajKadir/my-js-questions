@@ -22,8 +22,11 @@ if (x <= 100) {
 }
 
 if (!(x > 100)) {
-  console.log("I am the second test"); // This will run because !false is true
-  console.log(x);
+  console.log("I am the second test"); // NaN > 100 is false -> This will run because if !(false) is true
+  console.log(x); // Outputs NaN
 }
 
 // Therefore the statements are NOT the same
+
+// Testing !false -> outputs true
+console.log(!false);
