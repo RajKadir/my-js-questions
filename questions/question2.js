@@ -22,7 +22,7 @@ if (x <= 100) {
 }
 
 if (!(x > 100)) {
-  console.log("I am the second test"); // This will run
+  console.log("I am the second test"); // This will run because !false is true
   console.log(x);
 }
 
