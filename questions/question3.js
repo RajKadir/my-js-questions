@@ -33,4 +33,4 @@ Pet.prototype.formatAge2 = function () {
 var dog1 = new Pet("Chewy", "Dog", 7);
 var cat1 = new Pet("Muffins", "Cat", 3);
 
-// In each instance variable dog1, cat1, it has its own copy of formatAge method. However the formatAge2 will only be added once to the Pet.prototype
+// In each instance variable dog1, cat1, it has its own copy of formatAge method (memory inefficiency). However the formatAge2 will only be added once to the Pet.prototype (memory efficient).
