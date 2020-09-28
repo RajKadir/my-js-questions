@@ -13,3 +13,17 @@
     Pay attention: NaN can't be equal, less than or more than any other numerical value, so the only reliable way to check if the value is NaN, is to use the isNaN() function
 
 */
+
+var x = NaN;
+
+if (x <= 100) {
+  console.log("I am the first test"); // This won't run
+  console.log(x);
+}
+
+if (!(x > 100)) {
+  console.log("I am the second test"); // This will run
+  console.log(x);
+}
+
+// Therefore the statements are NOT the same
