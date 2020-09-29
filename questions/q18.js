@@ -31,5 +31,5 @@
         foo(); // Now foo is defined here
 
 
-        In summary: Before all the code is ran, JS first gets all declarations, hoisting is the name of this process.
+        In summary: Before all the code is ran, JS first gets all declarations and puts them to the top, hoisting is the name of this process.
 */
